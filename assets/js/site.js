@@ -144,8 +144,8 @@
       if (inline) inline.pause();
       const v = document.createElement("video");
       v.controls = true; v.autoplay = true; v.playsInline = true;
-      v.poster = `${root}/assets/img/trailer-poster.jpg`;
-      v.src = `${root}/assets/video/trailer-720p.mp4`;
+      v.poster = `${root}/assets/img/trailer-poster.jpg?v=2`;
+      v.src = `${root}/assets/video/trailer-720p.mp4?v=2`;
       openLightbox(v, "UNREDACTED: The Deep State · Announce trailer · Pre-alpha footage");
     })
   );
