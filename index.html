@@ -4,21 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>UNREDACTED: The Deep State</title>
-<meta name="description" content="A noir stealth-strategy game set in 1898 America. Survive the interview, build a secret headquarters, and send operatives into the night to rewrite tomorrow's headlines.">
+<meta name="description" content="A noir stealth-strategy game about the secret hands behind history's headlines, from the sinking of the USS Maine in 1898 to the present day.">
 <meta name="theme-color" content="#0d0c0b">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="UNREDACTED: The Deep State">
-<meta property="og:description" content="History is written by those who redact it. A noir stealth-strategy game set in 1898 America.">
+<meta property="og:description" content="History is written by those who redact it. A noir stealth-strategy game spanning 1898 to the present day.">
 <meta property="og:image" content="https://remiclassic.github.io/unredacted/assets/img/og.jpg">
 <meta property="og:url" content="https://remiclassic.github.io/unredacted/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://remiclassic.github.io/unredacted/assets/img/og.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Special+Elite&display=swap">
-<link rel="stylesheet" href="assets/css/site.css?v=mwtabya7">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Special+Elite&family=IM+Fell+English+SC&family=IM+Fell+English:ital@0;1&family=Bebas+Neue&family=Courier+Prime:wght@400;700&family=Jost:wght@400;600;800&family=Anton&family=Inter:wght@400;600;800&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="assets/css/site.css?v=t4">
+<link rel="stylesheet" href="assets/css/timeline-masks.css?v=t4">
+<link rel="stylesheet" href="assets/css/timeline.css?v=t4">
 </head>
 <body>
 
@@ -26,9 +28,9 @@
   <div class="wrap">
     <a class="brand" href="./" aria-label="UNREDACTED: The Deep State home"><img src="assets/img/logo.png" alt="UNREDACTED: The Deep State" width="1024" height="340"></a>
     <nav class="nav" aria-label="Main">
+      <a href="#timeline">Timeline</a>
       <a href="#game">The Game</a>
       <a href="#operatives">Operatives</a>
-      <a href="#media">Media</a>
       <a href="#faq">FAQ</a>
       <a class="keep" href="presskit/">Press Kit</a>
       <a class="btn keep" href="#trailer">Trailer</a>
@@ -39,20 +41,21 @@
 <main>
   <section class="hero">
     <div class="hero-media" aria-hidden="true">
-      <video autoplay muted loop playsinline preload="auto" poster="assets/img/hero-poster.jpg">
-        <source src="assets/video/hero-loop.mp4" type="video/mp4">
-      </video>
+      <picture>
+        <source srcset="assets/img/hero-cover.webp" type="image/webp">
+        <img src="assets/img/hero-cover.jpg" alt="" width="1671" height="941" fetchpriority="high">
+      </picture>
     </div>
     <div class="wrap">
-      <span class="label">America, 1898</span>
+      <span class="label">1898 — Present day</span>
       <img class="hero-logo" src="assets/img/logo.png" alt="UNREDACTED: The Deep State" width="1024" height="340">
       <h1>History is written by those who <span class="redact">redact</span> it.</h1>
-      <p class="lede">Survive the interview. Build the secret headquarters. Send your operatives into the night to rewrite tomorrow's headlines. A noir stealth-strategy game, in development.</p>
+      <p class="lede">From the sinking of the Maine to the last post before the news broke, every headline had an author. A noir stealth-strategy game about the hands behind them, in development.</p>
       <div class="btns">
         <button class="btn primary" type="button" data-play-trailer>
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg>Watch the trailer
         </button>
-        <a class="btn" href="presskit/">Press kit</a>
+        <a class="btn" href="#timeline">Open the file</a>
       </div>
       <p class="fine">Pre-alpha · Work in progress · Steam page coming soon</p>
     </div>
@@ -66,6 +69,362 @@
         <span class="hit">We are watching.</span>
       </blockquote>
       <p class="wire-src">— Intercepted mail, first day on the job</p>
+    </div>
+  </section>
+
+  <!-- ================= TIMELINE ================= -->
+  <div class="timeline" id="timeline">
+    <nav class="rail" aria-label="Timeline">
+      <div class="rail-now" aria-hidden="true"><span class="rail-year" data-rail-year>1898</span><span class="rail-place" data-rail-place>Havana Harbor</span></div>
+      <ol class="rail-list">
+        <li><a href="#y1898" data-rail="1898">1898</a></li>
+        <li><a href="#y1914" data-rail="1914">1914</a></li>
+        <li><a href="#y1941" data-rail="1941">1941</a></li>
+        <li><a href="#y1963" data-rail="1963">1963</a></li>
+        <li><a href="#y1997" data-rail="1997">1997</a></li>
+        <li><a href="#y2001" data-rail="2001">2001</a></li>
+        <li><a href="#y2019" data-rail="2019">2019</a></li>
+      </ol>
+    </nav>
+
+    <!-- 1898 -->
+    <section class="era e1898" id="y1898" data-year="1898" data-place="Havana Harbor" aria-labelledby="h1898">
+      <header class="scene">
+        <picture class="scene-img"><source srcset="assets/img/scene-1898.webp" type="image/webp"><img src="assets/img/scene-1898.jpg" alt="Game art: a foggy naval dockyard with a crane, a warship and silhouetted men" width="1760" height="990" loading="lazy" decoding="async"></picture>
+        <div class="scene-fx" aria-hidden="true"></div>
+        <div class="scene-in">
+          <p class="scene-year" aria-hidden="true">1898</p>
+          <p class="scene-place">Havana Harbor · 15 February 1898</p>
+        </div>
+        <p class="scene-credit">Game art</p>
+      </header>
+      <div class="era-body">
+      <div class="tex" aria-hidden="true"></div>
+      <div class="seam top" aria-hidden="true"></div>
+      <div class="era-in">
+        <header class="np-mast">
+          <span class="np-ear">Extra</span>
+          <span class="np-title">The Evening Clarion</span>
+          <span class="np-ear">One Cent</span>
+          <span class="np-dateline">New York · Wednesday, February 16, 1898 · Five O'Clock Edition</span>
+        </header>
+        <h2 class="np-head" id="h1898">Destruction of the War Ship Maine</h2>
+        <p class="np-deck">Terrible explosion in Havana Harbor. Hundreds of brave sailors lost. Who is responsible?</p>
+        <div class="era-grid">
+          <figure class="np-photo">
+            <img src="assets/img/era-1898.jpg" alt="Game art: a desk strewn with 1898 newspapers about the Maine, marked up in red ink with the word DELAY circled, a pistol on top" width="1600" height="900" loading="lazy">
+            <figcaption>From the cabal's desk. Game art.</figcaption>
+          </figure>
+          <div class="era-side">
+            <div class="record">
+              <h3 class="rec-label">The official record</h3>
+              <p>On the night of February 15, 1898, the armored cruiser USS Maine exploded and sank in Havana Harbor, Cuba. 266 American sailors died. A U.S. Navy court of inquiry blamed a mine; the cause has never been settled. Ten weeks later the United States was at war with Spain.</p>
+            </div>
+            <aside class="file">
+              <span class="file-stamp">Classified</span>
+              <span class="file-no">File 1898-02</span>
+              <h3>Operation Shipyard</h3>
+              <dl>
+                <div><dt>Objective</dt><dd>Sabotage the U.S.S. Maine</dd></div>
+                <div><dt>Operatives</dt><dd><span class="bar">██████ ███████</span></dd></div>
+                <div><dt>Outcome</dt><dd><span class="bar">█████████████</span></dd></div>
+              </dl>
+              <p class="file-note">Where the game begins.</p>
+            </aside>
+          </div>
+        </div>
+      </div>
+    <div class="seam bot" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 1914 -->
+    <section class="era e1914" id="y1914" data-year="1914" data-place="Sarajevo" aria-labelledby="h1914">
+      <header class="scene">
+        <picture class="scene-img"><source srcset="assets/img/scene-1914.webp" type="image/webp"><img src="assets/img/scene-1914.jpg" alt="Illustration in the style of a 1914 photograph: a quiet riverside quay and stone bridge in Sarajevo" width="1760" height="990" loading="lazy" decoding="async"></picture>
+        <div class="scene-fx" aria-hidden="true"></div>
+        <div class="scene-in">
+          <p class="scene-year" aria-hidden="true">1914</p>
+          <p class="scene-place">Sarajevo · 28 June 1914</p>
+        </div>
+        <p class="scene-credit">Illustration · not an archival photograph</p>
+      </header>
+      <div class="era-body">
+      <div class="tex" aria-hidden="true"></div>
+      <div class="seam top" aria-hidden="true"></div>
+      <div class="strip tape top" aria-hidden="true"><span>Sarajevo 28 June 1914 stop Archduke shot stop more follows stop &nbsp; Sarajevo 28 June 1914 stop Archduke shot stop more follows stop &nbsp; Sarajevo 28 June 1914 stop Archduke shot stop more follows stop &nbsp; Sarajevo 28 June 1914 stop Archduke shot stop more follows stop &nbsp; Sarajevo 28 June 1914 stop Archduke shot stop more follows stop &nbsp; Sarajevo 28 June 1914 stop Archduke shot stop more follows stop &nbsp; Sarajevo 28 June 1914 stop Archduke shot stop more follows stop &nbsp; Sarajevo 28 June 1914 stop Archduke shot stop more follows stop &nbsp; </span></div>
+      <div class="era-in">
+        <div class="era-grid">
+          <div class="tg">
+            <header class="tg-head">
+              <span>Telegraph Office</span>
+              <span>Form No. 14 · Urgent</span>
+            </header>
+            <p class="tg-route">Sarajevo → Vienna · 28 June 1914</p>
+            <h2 class="tg-strips" id="h1914">
+              <span>Sarajevo 28 June 1914 stop</span>
+              <span>Archduke Franz Ferdinand and Duchess Sophie shot stop</span>
+              <span>Both dead stop assassin seized stop</span>
+              <span>More follows</span>
+            </h2>
+            <p class="tg-foot">Received 12:40 · Clerk <span class="bar">████</span></p>
+          </div>
+          <div class="era-side">
+            <div class="record">
+              <h3 class="rec-label">The official record</h3>
+              <p>On June 28, 1914, Archduke Franz Ferdinand, heir to the Austro-Hungarian throne, and his wife Sophie were shot dead in Sarajevo by Gavrilo Princip, a 19-year-old Bosnian Serb. A month later Austria-Hungary declared war on Serbia. Within weeks most of Europe was at war, and around 20 million people would die.</p>
+            </div>
+            <aside class="file">
+              <span class="file-stamp">Classified</span>
+              <span class="file-no">File 1914-06</span>
+              <h3>Operation <span class="bar">████████</span></h3>
+              <dl>
+                <div><dt>Objective</dt><dd><span class="bar">████████████████</span></dd></div>
+                <div><dt>Route</dt><dd>Appel Quay, <span class="bar">█████</span></dd></div>
+                <div><dt>Outcome</dt><dd><span class="bar">███████████</span></dd></div>
+              </dl>
+            </aside>
+          </div>
+        </div>
+      </div>
+    <div class="seam bot" aria-hidden="true"></div>
+      <div class="strip tape bot" aria-hidden="true"><span>Vienna 28 July 1914 stop war declared stop &nbsp; Vienna 28 July 1914 stop war declared stop &nbsp; Vienna 28 July 1914 stop war declared stop &nbsp; Vienna 28 July 1914 stop war declared stop &nbsp; Vienna 28 July 1914 stop war declared stop &nbsp; Vienna 28 July 1914 stop war declared stop &nbsp; Vienna 28 July 1914 stop war declared stop &nbsp; Vienna 28 July 1914 stop war declared stop &nbsp; Vienna 28 July 1914 stop war declared stop &nbsp; Vienna 28 July 1914 stop war declared stop &nbsp; </span></div>
+      </div>
+    </section>
+
+    <!-- 1941 -->
+    <section class="era e1941" id="y1941" data-year="1941" data-place="Pearl Harbor" aria-labelledby="h1941">
+      <header class="scene">
+        <picture class="scene-img"><source srcset="assets/img/scene-1941.webp" type="image/webp"><img src="assets/img/scene-1941.jpg" alt="Illustration in the style of a 1941 photograph: battleships moored in a calm harbor at dawn" width="1760" height="990" loading="lazy" decoding="async"></picture>
+        <div class="scene-fx" aria-hidden="true"></div>
+        <div class="scene-in">
+          <p class="scene-year" aria-hidden="true">1941</p>
+          <p class="scene-place">Pearl Harbor · 7 December 1941</p>
+        </div>
+        <p class="scene-credit">Illustration · not an archival photograph</p>
+      </header>
+      <div class="era-body">
+      <div class="tex" aria-hidden="true"></div>
+      <div class="seam top" aria-hidden="true"></div>
+      <div class="era-in">
+        <div class="wx">
+          <div class="wx-band"><span>Extra</span><span>Honolulu · Sunday, December 7, 1941</span><span>Extra</span></div>
+          <h2 class="wx-head" id="h1941">War! <span>Pearl Harbor Attacked</span></h2>
+          <div class="wx-stripes" aria-hidden="true"></div>
+        </div>
+        <div class="era-grid">
+          <div class="record">
+            <h3 class="rec-label">The official record</h3>
+            <p>Shortly before 8 a.m. on December 7, 1941, Japanese carrier aircraft attacked the U.S. Pacific Fleet at Pearl Harbor, Hawaii. 2,403 Americans were killed. The next day the United States declared war on Japan.</p>
+          </div>
+          <aside class="file">
+            <span class="file-stamp">Top secret</span>
+            <span class="file-no">File 1941-12</span>
+            <h3>Operation <span class="bar">█████████</span></h3>
+            <dl>
+              <div><dt>Intercepts</dt><dd><span class="bar">██ ██████████ ███</span></dd></div>
+              <div><dt>Distribution</dt><dd><span class="bar">████████</span> only</dd></div>
+              <div><dt>Outcome</dt><dd><span class="bar">██████████████</span></dd></div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    <div class="seam bot" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 1963 -->
+    <section class="era e1963" id="y1963" data-year="1963" data-place="Dallas" aria-labelledby="h1963">
+      <header class="scene">
+        <picture class="scene-img"><source srcset="assets/img/scene-1963.webp" type="image/webp"><img src="assets/img/scene-1963.jpg" alt="Illustration in the style of 1963 home-movie film: crowds line a sunny downtown street as a motorcade approaches" width="1760" height="990" loading="lazy" decoding="async"></picture>
+        <div class="scene-fx" aria-hidden="true"></div>
+        <div class="scene-in">
+          <p class="scene-year" aria-hidden="true">1963</p>
+          <p class="scene-place">Dallas · 22 November 1963</p>
+        </div>
+        <p class="scene-credit">Illustration · not an archival photograph</p>
+      </header>
+      <div class="era-body">
+      <div class="tex" aria-hidden="true"></div>
+      <div class="seam top" aria-hidden="true"></div>
+      <div class="strip film top" aria-hidden="true"><span>Safety film ▸ 22 Nov 63 ▸ 12 ▸ 12A ▸ 13 ▸ 13A ▸ Safety film ▸ 22 Nov 63 ▸ 12 ▸ 12A ▸ 13 ▸ 13A ▸ Safety film ▸ 22 Nov 63 ▸ 12 ▸ 12A ▸ 13 ▸ 13A ▸ Safety film ▸ 22 Nov 63 ▸ 12 ▸ 12A ▸ 13 ▸ 13A ▸ Safety film ▸ 22 Nov 63 ▸ 12 ▸ 12A ▸ 13 ▸ 13A ▸ Safety film ▸ 22 Nov 63 ▸ 12 ▸ 12A ▸ 13 ▸ 13A ▸ Safety film ▸ 22 Nov 63 ▸ 12 ▸ 12A ▸ 13 ▸ 13A ▸ Safety film ▸ 22 Nov 63 ▸ 12 ▸ 12A ▸ 13 ▸ 13A ▸ </span></div>
+      <div class="era-in">
+        <div class="era-grid">
+          <div class="tty">
+            <div class="tty-paper">
+              <p class="tty-meta">A7N DA · NOV 22 · 1:34 PM CST</p>
+              <h2 class="tty-text" id="h1963"><span class="tty-flash">Flash</span>
+                <span>Dallas — President Kennedy shot in motorcade.</span>
+                <span>Bulletin: the President is dead.</span></h2>
+              <p class="tty-meta">— 30 —</p>
+            </div>
+            <div class="film-frames" aria-label="Film frames, withheld">
+              <span>Frame 01<br>Withheld</span><span>Frame 02<br>Withheld</span><span>Frame 03<br>Withheld</span><span>Frame 04<br>Withheld</span>
+            </div>
+          </div>
+          <div class="era-side">
+            <div class="record">
+              <h3 class="rec-label">The official record</h3>
+              <p>At 12:30 p.m. on November 22, 1963, President John F. Kennedy was shot while riding in an open-top motorcade through Dealey Plaza in Dallas, Texas. He died within the hour. In 1964 the Warren Commission concluded that Lee Harvey Oswald acted alone.</p>
+            </div>
+            <aside class="file">
+              <span class="file-stamp">Eyes only</span>
+              <span class="file-no">File 1963-11</span>
+              <h3>Operation <span class="bar">███████</span></h3>
+              <dl>
+                <div><dt>Location</dt><dd>Dealey Plaza</dd></div>
+                <div><dt>Assets</dt><dd><span class="bar">███ ████████</span></dd></div>
+                <div><dt>Release</dt><dd>Sealed until <span class="bar">████</span></dd></div>
+              </dl>
+            </aside>
+          </div>
+        </div>
+      </div>
+    <div class="seam bot" aria-hidden="true"></div>
+      <div class="strip film bot" aria-hidden="true"><span>Safety film ▸ 22 Nov 63 ▸ 14 ▸ 14A ▸ 15 ▸ 15A ▸ Safety film ▸ 22 Nov 63 ▸ 14 ▸ 14A ▸ 15 ▸ 15A ▸ Safety film ▸ 22 Nov 63 ▸ 14 ▸ 14A ▸ 15 ▸ 15A ▸ Safety film ▸ 22 Nov 63 ▸ 14 ▸ 14A ▸ 15 ▸ 15A ▸ Safety film ▸ 22 Nov 63 ▸ 14 ▸ 14A ▸ 15 ▸ 15A ▸ Safety film ▸ 22 Nov 63 ▸ 14 ▸ 14A ▸ 15 ▸ 15A ▸ Safety film ▸ 22 Nov 63 ▸ 14 ▸ 14A ▸ 15 ▸ 15A ▸ Safety film ▸ 22 Nov 63 ▸ 14 ▸ 14A ▸ 15 ▸ 15A ▸ </span></div>
+      </div>
+    </section>
+
+    <!-- 1997 -->
+    <section class="era e1997" id="y1997" data-year="1997" data-place="Paris" aria-labelledby="h1997">
+      <header class="scene">
+        <picture class="scene-img"><source srcset="assets/img/scene-1997.webp" type="image/webp"><img src="assets/img/scene-1997.jpg" alt="Illustration: an empty Paris riverside underpass at night under orange lamps" width="1760" height="990" loading="lazy" decoding="async"></picture>
+        <div class="scene-fx" aria-hidden="true"></div>
+        <div class="scene-in">
+          <p class="scene-year" aria-hidden="true">1997</p>
+          <p class="scene-place">Paris · 31 August 1997</p>
+        </div>
+        <p class="scene-credit">Illustration · not an archival photograph</p>
+      </header>
+      <div class="era-body">
+      <div class="tex" aria-hidden="true"></div>
+      <div class="seam top" aria-hidden="true"></div>
+      <div class="era-in">
+        <div class="tab">
+          <div class="tab-mast"><span>The Sunday Echo</span><span>31·08·97 · 50p</span></div>
+          <h2 class="tab-head" id="h1997">Paris, <span>31 August 1997</span></h2>
+          <p class="tab-deck">The Pont de l'Alma tunnel. A car chased by photographers. A princess.</p>
+        </div>
+        <div class="era-grid">
+          <div class="record">
+            <h3 class="rec-label">The official record</h3>
+            <p>Shortly after midnight on August 31, 1997, Diana, Princess of Wales, was fatally injured when the car carrying her crashed in the Pont de l'Alma tunnel in Paris while pursued by photographers. Dodi Fayed and the driver, Henri Paul, also died. A 2008 inquest ruled the deaths an unlawful killing caused by the grossly negligent driving of Paul and the pursuing vehicles.</p>
+          </div>
+          <aside class="file">
+            <span class="file-stamp">Restricted</span>
+            <span class="file-no">File 1997-08</span>
+            <h3>Operation <span class="bar">██████</span></h3>
+            <dl>
+              <div><dt>Vehicle</dt><dd><span class="bar">████ ██████</span></dd></div>
+              <div><dt>Photographs</dt><dd><span class="bar">██</span> recovered</dd></div>
+              <div><dt>Outcome</dt><dd><span class="bar">███████████</span></dd></div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    <div class="seam bot" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 2001 -->
+    <section class="era e2001" id="y2001" data-year="2001" data-place="New York" aria-labelledby="h2001">
+      <header class="scene">
+        <picture class="scene-img"><source srcset="assets/img/scene-2001.webp" type="image/webp"><img src="assets/img/scene-2001.jpg" alt="Illustration: a crowd seen from behind watches a wall of television sets in a shop window" width="1760" height="990" loading="lazy" decoding="async"></picture>
+        <div class="scene-fx" aria-hidden="true"></div>
+        <div class="scene-in">
+          <p class="scene-year" aria-hidden="true">2001</p>
+          <p class="scene-place">New York · 11 September 2001</p>
+        </div>
+        <p class="scene-credit">Illustration · not an archival photograph</p>
+      </header>
+      <div class="era-body">
+      <div class="tex" aria-hidden="true"></div>
+      <div class="seam top" aria-hidden="true"></div>
+      <div class="strip static top" aria-hidden="true"></div>
+      <div class="era-in">
+        <div class="tv">
+          <div class="tv-screen">
+            <span class="tv-live">Live</span>
+            <span class="tv-clock">09·11·2001 &nbsp; 8:46 AM ET</span>
+            <h2 class="tv-third" id="h2001"><span class="tv-tag">Breaking news</span><span class="tv-line">Airliners hijacked · New York · Washington · Pennsylvania</span></h2>
+          </div>
+          <div class="tv-ticker" aria-hidden="true"><div><span>World Trade Center struck · Pentagon struck · Flight 93 down near Shanksville, Pennsylvania · All U.S. air traffic grounded ·&nbsp;</span><span>World Trade Center struck · Pentagon struck · Flight 93 down near Shanksville, Pennsylvania · All U.S. air traffic grounded ·&nbsp;</span></div></div>
+        </div>
+        <div class="era-grid">
+          <div class="record">
+            <h3 class="rec-label">The official record</h3>
+            <p>On the morning of September 11, 2001, nineteen al-Qaeda hijackers seized four airliners. Two struck the World Trade Center in New York, one struck the Pentagon, and one crashed in a field in Pennsylvania after passengers fought back. 2,977 people were killed.</p>
+          </div>
+          <aside class="file">
+            <span class="file-stamp">Classified</span>
+            <span class="file-no">File 2001-09</span>
+            <h3>Operation <span class="bar">█████████</span></h3>
+            <dl>
+              <div><dt>Warnings</dt><dd><span class="bar">██</span> received</dd></div>
+              <div><dt>Pages</dt><dd><span class="bar">██</span> withheld</dd></div>
+              <div><dt>Outcome</dt><dd><span class="bar">██████████████</span></dd></div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    <div class="seam bot" aria-hidden="true"></div>
+      <div class="strip static bot" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 2019 -->
+    <section class="era e2019" id="y2019" data-year="2019" data-place="New York" aria-labelledby="h2019">
+      <header class="scene">
+        <picture class="scene-img"><source srcset="assets/img/scene-2019.webp" type="image/webp"><img src="assets/img/scene-2019.jpg" alt="Illustration in the style of security-camera footage: an empty detention-facility corridor at night" width="1760" height="990" loading="lazy" decoding="async"></picture>
+        <div class="scene-fx" aria-hidden="true"><span class="hud hud-tl">CAM 02</span><span class="hud hud-tr"><i></i>REC</span><span class="hud hud-br">08·10·2019 &nbsp;<b>██:██:██</b></span></div>
+        <div class="scene-in">
+          <p class="scene-year" aria-hidden="true">2019</p>
+          <p class="scene-place">New York · 10 August 2019</p>
+        </div>
+        <p class="scene-credit">Illustration · not an archival photograph</p>
+      </header>
+      <div class="era-body">
+      <div class="tex" aria-hidden="true"></div>
+      <div class="seam top" aria-hidden="true"></div>
+      <div class="era-in">
+        <div class="era-grid">
+          <div class="win">
+            <div class="win-bar"><i></i><i></i><i></i><span class="win-url">archive · thread No.222518349</span></div>
+            <img src="assets/img/screencap.png" alt="Screenshot of an anonymous imageboard post dated 08/10/19 titled 'Jeffrey Epstein DEAD', reading: dont ask me how I know, but Epstein died an hour ago from hanging, cardiac arrest. Screencap this" width="745" height="401" loading="lazy">
+            <p class="win-cap">Posted anonymously, 08/10/19. "Screencap this."</p>
+          </div>
+          <div class="era-side">
+            <h2 class="web-head" id="h2019">New York, 10 August 2019</h2>
+            <div class="record">
+              <h3 class="rec-label">The official record</h3>
+              <p>On August 10, 2019, Jeffrey Epstein was found dead in his cell at the Metropolitan Correctional Center in New York, where he was awaiting trial on federal sex-trafficking charges. The medical examiner ruled the death a suicide. A 2023 Justice Department report blamed failures by the jail's staff.</p>
+            </div>
+            <aside class="file">
+              <span class="file-stamp">Classified</span>
+              <span class="file-no">File 2019-08</span>
+              <h3>Operation <span class="bar">██████</span></h3>
+              <dl>
+                <div><dt>Cameras</dt><dd><span class="bar">███████████</span></dd></div>
+                <div><dt>Guards</dt><dd><span class="bar">██████</span></dd></div>
+                <div><dt>The list</dt><dd><span class="bar">████████████████</span></dd></div>
+              </dl>
+            </aside>
+          </div>
+        </div>
+      </div>
+    <div class="seam bot" aria-hidden="true"></div>
+      </div>
+    </section>
+  </div>
+  <!-- ================= /TIMELINE ================= -->
+
+  <section class="present" aria-labelledby="hpresent">
+    <picture class="scene-img"><source srcset="assets/img/scene-now.webp" type="image/webp"><img src="assets/img/scene-now.jpg" alt="Illustration: a tied manila folder under a desk lamp at night, city lights through a rain-streaked window" width="1760" height="990" loading="lazy" decoding="async"></picture>
+    <div class="scene-fx" aria-hidden="true"></div>
+    <div class="wrap">
+      <span class="label">Present day</span>
+      <h2 id="hpresent">The file is still open.<br><span class="redact">Now it's yours.</span></h2>
+      <p class="lede">More than a century of headlines. One organization behind them. One vacancy.</p>
     </div>
   </section>
 
@@ -93,7 +452,7 @@
       <div class="sec-head">
         <span class="label">The game</span>
         <h2>You are not the reporter who uncovers the conspiracy. You are its newest hire.</h2>
-        <p class="lede">UNREDACTED: The Deep State is a single-player noir stealth-strategy game about the fictional secret society that runs Gilded-Age America, and the people it uses to do it.</p>
+        <p class="lede">UNREDACTED: The Deep State is a single-player noir stealth-strategy game about the fictional secret society behind history's headlines, and the people it uses to write them. It begins in 1898.</p>
       </div>
 
       <div class="features">
@@ -163,7 +522,7 @@
       </div>
       <div class="ops">
         <article class="op" tabindex="0">
-          <img src="assets/img/op-john-mcadams.jpg" alt="Painted portrait of John McAdams" loading="lazy" width="512" height="512">
+          <img src="assets/img/op-john-mcadams.jpg?v=792074" alt="Portrait of John McAdams" loading="lazy" width="640" height="800">
           <span class="stamp">Top secret</span>
           <h3>John McAdams</h3>
           <div class="meta"><span>Status: Active</span><span>Recruitment: $600</span></div>
@@ -171,7 +530,7 @@
           <span class="reveal" data-reveal>Clearance required</span>
         </article>
         <article class="op" tabindex="0">
-          <img src="assets/img/op-juanita-dominguez.jpg" alt="Painted portrait of Juanita Dominguez" loading="lazy" width="512" height="512">
+          <img src="assets/img/op-juanita-dominguez.jpg?v=792198" alt="Portrait of Juanita Dominguez" loading="lazy" width="640" height="800">
           <span class="stamp">Top secret</span>
           <h3>Juanita Dominguez</h3>
           <div class="meta"><span>Status: Active</span><span>Recruitment: $500</span></div>
@@ -179,7 +538,7 @@
           <span class="reveal" data-reveal>Clearance required</span>
         </article>
         <article class="op" tabindex="0">
-          <img src="assets/img/op-logan-blackwood.jpg" alt="Painted portrait of Logan Blackwood" loading="lazy" width="512" height="512">
+          <img src="assets/img/op-logan-blackwood.jpg?v=792267" alt="Portrait of Logan Blackwood" loading="lazy" width="640" height="800">
           <span class="stamp">Top secret</span>
           <h3>Logan Blackwood</h3>
           <div class="meta"><span>Status: Active</span><span>Recruitment: $450</span></div>
@@ -187,7 +546,7 @@
           <span class="reveal" data-reveal>Clearance required</span>
         </article>
         <article class="op" tabindex="0">
-          <img src="assets/img/op-lynda-jones.jpg" alt="Painted portrait of Lynda Jones" loading="lazy" width="512" height="512">
+          <img src="assets/img/op-lynda-jones.jpg?v=792314" alt="Portrait of Lynda Jones" loading="lazy" width="640" height="800">
           <span class="stamp">Top secret</span>
           <h3>Lynda Jones</h3>
           <div class="meta"><span>Status: Active</span><span>Recruitment: $750</span></div>
@@ -195,7 +554,7 @@
           <span class="reveal" data-reveal>Clearance required</span>
         </article>
         <article class="op" tabindex="0">
-          <img src="assets/img/op-william-freedman.jpg" alt="Painted portrait of William Freedman" loading="lazy" width="512" height="512">
+          <img src="assets/img/op-william-freedman.jpg?v=792387" alt="Portrait of William Freedman" loading="lazy" width="640" height="800">
           <span class="stamp">Top secret</span>
           <h3>William Freedman</h3>
           <div class="meta"><span>Status: Active</span><span>Recruitment: $900</span></div>
@@ -230,7 +589,7 @@
       <div class="faq">
         <details open>
           <summary>What is UNREDACTED: The Deep State?</summary>
-          <p>A single-player noir stealth-strategy game set in 1898 America. You're recruited into a fictional secret society, then run it: building a hidden headquarters, gathering intel and leverage, and sending operatives on real-time-with-pause stealth missions.</p>
+          <p>A single-player noir stealth-strategy game about a fictional secret society working behind the headlines, from 1898 to the present day. You're recruited into it, then run it: building a hidden headquarters, gathering intel and leverage, and sending operatives on real-time-with-pause stealth missions.</p>
         </details>
         <details>
           <summary>When is it coming out, and on what platforms?</summary>
@@ -242,7 +601,7 @@
         </details>
         <details>
           <summary>Is it based on real history?</summary>
-          <p>It's historical fiction. The setting is real (Gilded-Age America and the run-up to the Spanish-American War) but the cabal and its operations are invented. It's a pulp conspiracy story, not a statement about modern politics.</p>
+          <p>It's historical fiction. The events on the timeline are real, and the official records quoted here are accurate. The cabal, its files and its operations are invented. No disrespect is intended to the people who lost their lives or to their families.</p>
         </details>
         <details>
           <summary>Can I play without killing?</summary>
@@ -271,10 +630,10 @@
     <div class="foot-row">
       <span>UNREDACTED: The Deep State · © 2026 Think Tank Games. All rights reserved.</span>
       <nav class="foot-links" aria-label="Footer">
-        <a href="#trailer">Trailer</a><a href="presskit/">Press kit</a><a href="#faq">FAQ</a>
+        <a href="#timeline">Timeline</a><a href="#trailer">Trailer</a><a href="presskit/">Press kit</a><a href="#faq">FAQ</a>
       </nav>
     </div>
-    <p class="disclaimer">Footage and screenshots are from a work-in-progress build. A work of fiction: any resemblance to secret societies, living or dead, is entirely deniable.</p>
+    <p class="disclaimer">A work of fiction. The events on the timeline are real; the conspiracies, files and operations are invented. Footage and screenshots are from a work-in-progress build.</p>
   </div>
 </footer>
 
@@ -283,6 +642,7 @@
   <div id="lb-body"></div>
 </dialog>
 
-<script src="assets/js/site.js?v=mwtabya7"></script>
+<script src="assets/js/site.js?v=t4"></script>
+<script src="assets/js/timeline.js?v=t4"></script>
 </body>
 </html>

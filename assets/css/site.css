@@ -121,7 +121,11 @@ p { margin: 0; }
 /* ---------- hero ---------- */
 .hero { position: relative; isolation: isolate; overflow: hidden; border-bottom: 1px solid var(--ink-3); }
 .hero-media { position: absolute; inset: 0; z-index: -1; }
-.hero-media video, .hero-media img { width: 100%; height: 100%; object-fit: cover; }
+.hero-media picture { display: block; width: 100%; height: 100%; }
+.hero-media video, .hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 62% center; }
+.hero-media img { transform-origin: 55% 40%; animation: hero-push 28s ease-out both; }
+@keyframes hero-push { from { transform: scale(1); } to { transform: scale(1.06); } }
+@media (prefers-reduced-motion: reduce) { .hero-media img { animation: none; } }
 .hero-media::after {
   content: ""; position: absolute; inset: 0;
   background:
@@ -186,7 +190,7 @@ p { margin: 0; }
 }
 .op:nth-child(2n) { --tilt: .8deg; } .op:nth-child(3n) { --tilt: -1deg; } .op:nth-child(5n) { --tilt: .5deg; }
 .op:hover { transform: rotate(0) translateY(-4px); }
-.op img { width: 100%; aspect-ratio: 1; object-fit: cover; filter: sepia(.25) contrast(1.05); border: 1px solid rgba(0,0,0,.2); }
+.op img { width: 100%; aspect-ratio: 1; object-fit: cover; object-position: center 18%; filter: sepia(.25) contrast(1.05); border: 1px solid rgba(0,0,0,.2); }
 .op .stamp {
   position: absolute; top: 18px; right: 14px; transform: rotate(-9deg);
   font-family: var(--f-type); font-size: .66rem; letter-spacing: .16em; color: var(--red);
@@ -289,3 +293,4 @@ dialog.lb .lb-bar button { background: none; border: 1px solid var(--smoke); col
 .vids { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
 .vids video { width: 100%; background: #000; border: 1px solid var(--ink-3); }
 .vids .v-vert video { aspect-ratio: 9/16; max-height: 520px; object-fit: contain; }
+
