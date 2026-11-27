@@ -1,4 +1,4 @@
-# UNREDACTED: The Deep State — Official site & press kit
+# UNREDACTED: The Deep State official site and press kit
 
 A noir stealth-strategy game set in 1898 America, by Think Tank Games.
 

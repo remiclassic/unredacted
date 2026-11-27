@@ -15,7 +15,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Special+Elite&display=swap">
-<link rel="stylesheet" href="../assets/css/site.css?v=c792524">
+<link rel="stylesheet" href="../assets/css/site.css?v=d1">
+<link rel="stylesheet" href="../assets/css/present.css?v=d1">
 </head>
 <body>
 <script>document.documentElement.dataset.root = "..";</script>
@@ -26,7 +27,7 @@
     <nav class="nav" aria-label="Main">
       <a href="../#game">The Game</a>
       <a href="../#operatives">Operatives</a>
-      <a href="../#media">Media</a>
+      <a href="../#timeline">Timeline</a>
       <a class="keep" href="./" aria-current="page">Press Kit</a>
       <a class="btn keep" href="#download-all">Download all</a>
     </nav>
@@ -34,11 +35,14 @@
 </header>
 
 <main>
-  <section class="band tight raised">
-    <div class="wrap" style="display:grid;gap:14px">
-      <span class="label">Press kit · Classified for distribution</span>
-      <h1 style="font-size:var(--step-4)">UNREDACTED: <span class="redact">The Deep State</span></h1>
+  <section class="pk-hero">
+    <picture class="sec-bg" aria-hidden="true"><source srcset="../assets/img/bg-archive.webp" type="image/webp"><img src="../assets/img/bg-archive.jpg" alt="" width="1760" height="990" decoding="async"></picture>
+    <div class="wrap">
+      <span class="label">Press kit · Cleared for release</span>
+      <h1>UNREDACTED: <span class="redact">The Deep State</span></h1>
       <p class="lede">A noir stealth-strategy game about the secret hands behind history, 1898 to present day: build a secret headquarters, recruit a cabal, and send operatives into the night to rewrite tomorrow's headlines.</p>
+      <div class="btns"><a class="btn primary" href="#download-all">Download all</a><a class="btn" href="#videos">Videos</a><a class="btn" href="#release">Press release</a></div>
+      <ul class="pk-stats"><li><b>4</b>Videos</li><li><b>11</b>Key art</li><li><b>9</b>Logos</li><li><b>18</b>Screenshots</li><li><b>47</b>Store, social &amp; cards</li></ul>
     </div>
   </section>
 
@@ -275,12 +279,24 @@
 </main>
 
 <footer class="site-foot">
-  <div class="wrap">
-    <div class="foot-row">
-      <span>UNREDACTED: The Deep State · © 2026 Think Tank Games. All rights reserved.</span>
-      <nav class="foot-links" aria-label="Footer"><a href="../">Home</a><a href="../#trailer">Trailer</a><a href="#download-all">Download all</a></nav>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <img src="../assets/img/logo.png" alt="UNREDACTED: The Deep State" width="1024" height="340" loading="lazy">
+      <p>History is written by those who redact it.</p>
+      <p class="foot-status"><i></i>In development · Steam page coming soon</p>
     </div>
-    <p class="disclaimer">Footage and screenshots are from a work-in-progress build. A work of fiction: any resemblance to secret societies, living or dead, is entirely deniable.</p>
+    <nav class="foot-col" aria-label="The file">
+      <h2>The file</h2>
+      <a href="../#timeline">Timeline</a><a href="../#trailer">Trailer</a><a href="../#game">The game</a><a href="../#operatives">Operatives</a><a href="../#media">Screenshots</a><a href="../#faq">FAQ</a>
+    </nav>
+    <nav class="foot-col" aria-label="Press">
+      <h2>Press</h2>
+      <a href="#description">Fact sheet</a><a href="#videos">Videos</a><a href="#release">Press release</a><a href="#download-all">Download all</a>
+    </nav>
+  </div>
+  <div class="wrap foot-legal">
+    <span>UNREDACTED: The Deep State · © 2026 Think Tank Games. All rights reserved.</span>
+    <p class="disclaimer">A work of fiction. The events on the timeline are real; the conspiracies, files and operations are invented. Footage and screenshots are from a work-in-progress build.</p>
   </div>
 </footer>
 
@@ -288,6 +304,6 @@
   <div class="lb-bar"><span id="lb-cap"></span><button type="button" data-close>Close</button></div>
   <div id="lb-body"></div>
 </dialog>
-<script src="../assets/js/site.js?v=mwtabya7"></script>
+<script src="../assets/js/site.js?v=d1"></script>
 </body>
 </html>

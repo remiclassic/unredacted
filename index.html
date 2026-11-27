@@ -18,9 +18,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Special+Elite&family=IM+Fell+English+SC&family=IM+Fell+English:ital@0;1&family=Bebas+Neue&family=Courier+Prime:wght@400;700&family=Jost:wght@400;600;800&family=Anton&family=Inter:wght@400;600;800&family=IBM+Plex+Mono:wght@400;600&display=swap">
-<link rel="stylesheet" href="assets/css/site.css?v=t4">
-<link rel="stylesheet" href="assets/css/timeline-masks.css?v=t4">
-<link rel="stylesheet" href="assets/css/timeline.css?v=t4">
+<link rel="stylesheet" href="assets/css/site.css?v=d1">
+<link rel="stylesheet" href="assets/css/timeline-masks.css?v=d1">
+<link rel="stylesheet" href="assets/css/timeline.css?v=d1">
+<link rel="stylesheet" href="assets/css/present.css?v=d1">
 </head>
 <body>
 
@@ -47,7 +48,7 @@
       </picture>
     </div>
     <div class="wrap">
-      <span class="label">1898 — Present day</span>
+      <span class="label">1898 to present day</span>
       <img class="hero-logo" src="assets/img/logo.png" alt="UNREDACTED: The Deep State" width="1024" height="340">
       <h1>History is written by those who <span class="redact">redact</span> it.</h1>
       <p class="lede">From the sinking of the Maine to the last post before the news broke, every headline had an author. A noir stealth-strategy game about the hands behind them, in development.</p>
@@ -68,7 +69,7 @@
         <span>Winner takes all.</span>
         <span class="hit">We are watching.</span>
       </blockquote>
-      <p class="wire-src">— Intercepted mail, first day on the job</p>
+      <p class="wire-src">Intercepted mail, first day on the job</p>
     </div>
   </section>
 
@@ -254,9 +255,9 @@
             <div class="tty-paper">
               <p class="tty-meta">A7N DA · NOV 22 · 1:34 PM CST</p>
               <h2 class="tty-text" id="h1963"><span class="tty-flash">Flash</span>
-                <span>Dallas — President Kennedy shot in motorcade.</span>
+                <span>Dallas: President Kennedy shot in motorcade.</span>
                 <span>Bulletin: the President is dead.</span></h2>
-              <p class="tty-meta">— 30 —</p>
+              <p class="tty-meta">-30-</p>
             </div>
             <div class="film-frames" aria-label="Film frames, withheld">
               <span>Frame 01<br>Withheld</span><span>Frame 02<br>Withheld</span><span>Frame 03<br>Withheld</span><span>Frame 04<br>Withheld</span>
@@ -428,164 +429,179 @@
     </div>
   </section>
 
-  <section class="band" id="trailer">
+  <!-- ================= SCREENING ROOM ================= -->
+  <section class="screening" id="trailer" aria-labelledby="htrailer">
+    <picture class="sec-bg" aria-hidden="true"><source srcset="assets/img/bg-screening.webp" type="image/webp"><img src="assets/img/bg-screening.jpg" alt="" width="1760" height="990" loading="lazy" decoding="async"></picture>
     <div class="wrap">
-      <div class="sec-head">
-        <span class="label">Announce trailer</span>
-        <h2>Every headline has an author.</h2>
-      </div>
-      <div class="player">
-        <video id="trailer-video" controls preload="metadata" playsinline poster="assets/img/trailer-poster.jpg">
-          <source src="assets/video/trailer-720p.mp4" type="video/mp4">
-          Your browser can't play this video. <a href="assets/video/trailer-720p.mp4">Download the trailer</a>.
-        </video>
-      </div>
-      <div class="player-cap">
-        <span>Pre-alpha footage from a work-in-progress build.</span>
-        <span>1080p master in the <a href="presskit/#videos">press kit</a></span>
+      <header class="sec-head">
+        <span class="label">Screening room · Announce trailer</span>
+        <h2 id="htrailer">Every headline has an author.</h2>
+      </header>
+      <div class="reel">
+        <div class="player">
+          <video id="trailer-video" controls preload="none" playsinline poster="assets/img/trailer-poster.jpg">
+            <source src="assets/video/trailer-720p.mp4" type="video/mp4">
+            Your browser can't play this video. <a href="assets/video/trailer-720p.mp4">Download the trailer</a>.
+          </video>
+          <button class="play-cover" type="button" data-inline-play aria-label="Play the announce trailer">
+            <img src="assets/img/trailer-poster.jpg" alt="" width="1920" height="1080" loading="lazy">
+            <span class="play-ui"><span class="play-disc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span><span class="play-text">Play trailer<small>1 min 31 s</small></span></span>
+          </button>
+          <i class="crop tl"></i><i class="crop tr"></i><i class="crop bl"></i><i class="crop br"></i>
+        </div>
+        <dl class="reel-meta">
+          <div><dt>Reel</dt><dd>Announce trailer</dd></div>
+          <div><dt>Runtime</dt><dd>1:31</dd></div>
+          <div><dt>Footage</dt><dd>Pre-alpha, work in progress</dd></div>
+          <div><dt>Master</dt><dd><a href="presskit/#videos">1080p in the press kit</a></dd></div>
+        </dl>
       </div>
     </div>
   </section>
 
-  <section class="band" id="game" style="padding-top:0">
+  <!-- ================= THE JOB ================= -->
+  <section class="job" id="game" aria-labelledby="hgame">
     <div class="wrap">
-      <div class="sec-head">
+      <header class="job-head">
         <span class="label">The game</span>
-        <h2>You are not the reporter who uncovers the conspiracy. You are its newest hire.</h2>
-        <p class="lede">UNREDACTED: The Deep State is a single-player noir stealth-strategy game about the fictional secret society behind history's headlines, and the people it uses to write them. It begins in 1898.</p>
+        <h2 id="hgame">You are not the reporter who uncovers the conspiracy. <em>You are its newest hire.</em></h2>
+        <p class="lede">UNREDACTED: The Deep State is a single-player noir stealth-strategy game about the fictional secret society behind history's headlines, and the people it uses to write them. It begins in 1898. This is the job, in the order you will do it.</p>
+      </header>
+
+      <div class="loop" data-loop>
+        <div class="loop-stage" aria-hidden="true">
+          <div class="stage-frame"><i class="crop tl"></i><i class="crop tr"></i><i class="crop bl"></i><i class="crop br"></i></div>
+          <div class="stage-foot"><span class="stage-count"><b data-stage-n>01</b> / 06</span><span class="stage-tag" data-stage-tag></span><span class="stage-ticks"><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+        </div>
+
+        <ol class="loop-steps">
+          <li class="step">
+            <figure class="step-media"><img src="assets/img/feat-interview.jpg" alt="The interview hall: a lamp-lit desk and a question card reading 'Who do you think we are and what do you think we do?'" loading="lazy" width="1600" height="900"><figcaption>In-game · The Interview</figcaption></figure>
+            <div class="step-copy">
+              <span class="step-no">Step 01 · The Interview</span>
+              <h3>The interview is the first mission.</h3>
+              <p>You sit across the desk from people who officially do not exist. Ten questions follow, starting with the hardest: <em>who do you think we are, and what do you think we do?</em> Wrong answers get you dismissed. Answers that reveal too much end the conversation permanently. The ones you survive shape your profile: Wet Work or Intel.</p>
+              <p class="fact"><b>10</b><span>questions. Not all of them can be survived.</span></p>
+            </div>
+          </li>
+          <li class="step">
+            <figure class="step-media"><img src="assets/img/feat-office.jpg" alt="The chandelier-lit Victorian office that fronts the headquarters" loading="lazy" width="1600" height="900"><figcaption>In-game · The Office</figcaption></figure>
+            <div class="step-copy">
+              <span class="step-no">Step 02 · The Office</span>
+              <h3>A respectable front.</h3>
+              <p>A stately Victorian office, chandelier lit, flag in the corner. On the desk: the File Organizer, the Rolodex, the morning Newspaper, the Stock Ticker, Personnel Data, Recruitment and History. This is where the mail arrives and the decisions get made.</p>
+              <p class="fact"><b>7</b><span>instruments on the desk, from the Rolodex to the Stock Ticker.</span></p>
+            </div>
+          </li>
+          <li class="step">
+            <figure class="step-media"><img src="assets/img/feat-hq.jpg" alt="Painted interior of the cabal's Victorian office with red armchairs and a fireplace" loading="lazy" width="1600" height="900"><figcaption>Game art</figcaption></figure>
+            <div class="step-copy">
+              <span class="step-no">Step 03 · The Headquarters</span>
+              <h3>Build the room behind the room.</h3>
+              <p>Behind the office, dig in. Build a multi-floor secret headquarters and place facilities to earn adjacency bonuses. Keep Power, Supplies and Money flowing. Time moves on its own; speed it up when results can't wait.</p>
+              <ul class="tags"><li>War Room</li><li>Think Tank</li><li>Communication Room</li><li>R&amp;D</li><li>Chemistry Lab</li><li>Dojo</li><li>Armory</li><li>Infirmary</li><li>Training Grounds</li><li>Power Room</li></ul>
+              <p class="fact"><b>10</b><span>facilities to build, three resources to balance.</span></p>
+            </div>
+          </li>
+          <li class="step">
+            <figure class="step-media"><img src="assets/img/feat-network.jpg" alt="The File Organizer: dossiers spread across the desk" loading="lazy" width="1600" height="900"><figcaption>In-game · File Organizer</figcaption></figure>
+            <div class="step-copy">
+              <span class="step-no">Step 04 · The Network</span>
+              <h3>Information is ammunition.</h3>
+              <p>Recruit a think tank from Industry, the Military, Strategists and the Black Market. Work Wall Street for investment opportunities and the Foreign Embassies for blackmail. Research wiretaps, poisons, communications and hospital equipment. Then read the clues (<em>the basement key is somewhere in the barn</em>) and plan accordingly.</p>
+              <p class="fact"><b>4</b><span>circles to recruit from: Industry, Military, Strategists, Black Market.</span></p>
+            </div>
+          </li>
+          <li class="step">
+            <figure class="step-media"><img src="assets/img/feat-operation.jpg" alt="Tactical pause: the action queue lists the operative's planned moves and an attack on a guard" loading="lazy" width="1600" height="900"><figcaption>In-game · Tactical pause &amp; action queue</figcaption></figure>
+            <div class="step-copy">
+              <span class="step-no">Step 05 · The Operation</span>
+              <h3>Plan. Pause. Execute.</h3>
+              <p>Missions play out top-down in real time, with tactical pause and an action queue. Guards see and hear. Footprints give you away. Fog of war hides what you haven't scouted. Then finish the job: kill, kidnap, plant evidence, extract. Optional conditions raise the stakes: <em>don't kill anyone else; don't let anyone flee.</em></p>
+              <ul class="tags"><li>Pick lock</li><li>Break in</li><li>Ambush</li><li>Subdue</li><li>Grab</li><li>Carry</li><li>Distract</li><li>Confront</li></ul>
+              <p class="fact"><b>8</b><span>ways to act, queued while the world stands still.</span></p>
+            </div>
+          </li>
+          <li class="step">
+            <figure class="step-media"><img src="assets/img/feat-cost.jpg" alt="An operative confronts an armed guard on the grounds at night" loading="lazy" width="1600" height="900"><figcaption>In-game · Combat</figcaption></figure>
+            <div class="step-copy">
+              <span class="step-no">Step 06 · The Cost</span>
+              <h3>Every kill leaves a mark.</h3>
+              <p>Your operatives have stats, and they have mental health. Killing takes a toll on the one who does it and on anyone close enough to see. The cabal asks for results. Your people pay for them.</p>
+              <p class="fact"><b>&minus;5</b><span>mental health for the operative who kills. &minus;1 for operatives nearby.</span></p>
+            </div>
+          </li>
+        </ol>
       </div>
-
-      <div class="features">
-        <article class="feature">
-          <div class="feature-media"><img src="assets/img/feat-interview.jpg" alt="The interview hall: a lamp-lit desk and a question card reading 'Who do you think we are and what do you think we do?'" loading="lazy" width="1920" height="1080"><span class="tag">In-game · The Interview</span></div>
-          <div class="feature-copy">
-            <span class="label">The Interview</span>
-            <h3>The interview is the first mission.</h3>
-            <p>You sit across the desk from people who officially do not exist. Ten questions follow, starting with the hardest: <em>who do you think we are, and what do you think we do?</em> Wrong answers get you dismissed. Answers that reveal too much end the conversation permanently. The ones you survive shape your profile: Wet Work or Intel.</p>
-          </div>
-        </article>
-
-        <article class="feature">
-          <div class="feature-media"><img src="assets/img/feat-office.jpg" alt="The chandelier-lit Victorian office that fronts the headquarters" loading="lazy" width="1920" height="1080"><span class="tag">In-game · The Office</span></div>
-          <div class="feature-copy">
-            <span class="label">The Office</span>
-            <h3>A respectable front.</h3>
-            <p>A stately Victorian office, chandelier lit, flag in the corner. On the desk: the File Organizer, the Rolodex, the morning Newspaper, the Stock Ticker, Personnel Data, Recruitment and History. This is where the mail arrives and the decisions get made.</p>
-          </div>
-        </article>
-
-        <article class="feature">
-          <div class="feature-media"><img src="assets/img/feat-hq.jpg" alt="Painted interior of the cabal's Victorian office with red armchairs and a fireplace" loading="lazy" width="1920" height="1080"><span class="tag">Game art</span></div>
-          <div class="feature-copy">
-            <span class="label">The Headquarters</span>
-            <h3>Build the room behind the room.</h3>
-            <p>Behind the office, dig in. Build a multi-floor secret headquarters (War Room, Think Tank, Communication Room, R&amp;D, Chemistry Lab, Dojo, Armory, Infirmary, Training Grounds, Power Room) and place facilities to earn adjacency bonuses. Keep Power, Supplies and Money flowing. Time moves on its own; speed it up when results can't wait.</p>
-          </div>
-        </article>
-
-        <article class="feature">
-          <div class="feature-media"><img src="assets/img/feat-network.jpg" alt="The File Organizer: dossiers spread across the desk" loading="lazy" width="1920" height="1080"><span class="tag">In-game · File Organizer</span></div>
-          <div class="feature-copy">
-            <span class="label">The Network</span>
-            <h3>Information is ammunition.</h3>
-            <p>Recruit a think tank from Industry, the Military, Strategists and the Black Market. Work Wall Street for investment opportunities and the Foreign Embassies for blackmail. Research wiretaps, poisons, communications and hospital equipment. Then read the clues (<em>the basement key is somewhere in the barn</em>) and plan accordingly.</p>
-          </div>
-        </article>
-
-        <article class="feature">
-          <div class="feature-media"><img src="assets/img/feat-operation.jpg" alt="Tactical pause: the action queue lists the operative's planned moves and an attack on a guard" loading="lazy" width="1920" height="1080"><span class="tag">In-game · Tactical pause &amp; action queue</span></div>
-          <div class="feature-copy">
-            <span class="label">The Operation</span>
-            <h3>Plan. Pause. Execute.</h3>
-            <p>Missions play out top-down in real time, with tactical pause and an action queue. Guards see and hear. Footprints give you away. Fog of war hides what you haven't scouted. Pick locks, ambush, subdue, carry bodies out of sight, distract, confront, then finish the job: kill, kidnap, plant evidence, extract. Optional conditions raise the stakes: <em>don't kill anyone else; don't let anyone flee.</em></p>
-          </div>
-        </article>
-
-        <article class="feature">
-          <div class="feature-media"><img src="assets/img/feat-cost.jpg" alt="An operative confronts an armed guard on the grounds at night" loading="lazy" width="1920" height="1080"><span class="tag">In-game · Combat</span></div>
-          <div class="feature-copy">
-            <span class="label">The Cost</span>
-            <h3>Every kill leaves a mark.</h3>
-            <p>Your operatives have stats (Stealth, Lockpicking, Sabotage, Close Combat, Persuasion, Sniper and more) and they have mental health. Killing takes a toll on the one who does it and on anyone close enough to see. The cabal asks for results. Your people pay for them.</p>
-          </div>
-        </article>
-      </div>
+      <p class="job-note">Figures reflect the current pre-alpha build and may change.</p>
     </div>
   </section>
 
-  <section class="band paper" id="operatives">
+  <!-- ================= PERSONNEL ================= -->
+  <section class="roster" id="operatives" aria-labelledby="hops">
+    <picture class="sec-bg" aria-hidden="true"><source srcset="assets/img/bg-desk.webp" type="image/webp"><img src="assets/img/bg-desk.jpg" alt="" width="1760" height="990" loading="lazy" decoding="async"></picture>
     <div class="wrap">
-      <div class="sec-head">
+      <header class="sec-head">
         <span class="label">Personnel data</span>
-        <h2>Choose who you send.</h2>
+        <h2 id="hops">Choose who you send.</h2>
         <p class="lede">Five operatives are on the current roster. Their files are mostly redacted. Each has their own stats, their own price, and a mind that keeps count.</p>
+      </header>
+    </div>
+    <div class="lineup" tabindex="0" role="group" aria-label="Operatives on the current roster">
+      <article class="agent">
+        <div class="print"><img src="assets/img/op-john-mcadams.jpg?v=792074" alt="Portrait of John McAdams" loading="lazy" width="640" height="800"><span class="stamp">Top secret</span></div>
+        <div class="slip"><span class="slip-no">File 01</span><h3>John McAdams</h3><dl><div><dt>Status</dt><dd>Active</dd></div><div><dt>Recruitment</dt><dd>$600</dd></div><div><dt>History</dt><dd><span class="bar">██████████</span></dd></div></dl></div>
+      </article>
+      <article class="agent">
+        <div class="print"><img src="assets/img/op-juanita-dominguez.jpg?v=792198" alt="Portrait of Juanita Dominguez" loading="lazy" width="640" height="800"><span class="stamp">Top secret</span></div>
+        <div class="slip"><span class="slip-no">File 02</span><h3>Juanita Dominguez</h3><dl><div><dt>Status</dt><dd>Active</dd></div><div><dt>Recruitment</dt><dd>$500</dd></div><div><dt>History</dt><dd><span class="bar">███████</span></dd></div></dl></div>
+      </article>
+      <article class="agent">
+        <div class="print"><img src="assets/img/op-logan-blackwood.jpg?v=792267" alt="Portrait of Logan Blackwood" loading="lazy" width="640" height="800"><span class="stamp">Top secret</span></div>
+        <div class="slip"><span class="slip-no">File 03</span><h3>Logan Blackwood</h3><dl><div><dt>Status</dt><dd>Active</dd></div><div><dt>Recruitment</dt><dd>$450</dd></div><div><dt>History</dt><dd><span class="bar">████████████</span></dd></div></dl></div>
+      </article>
+      <article class="agent">
+        <div class="print"><img src="assets/img/op-lynda-jones.jpg?v=792314" alt="Portrait of Lynda Jones" loading="lazy" width="640" height="800"><span class="stamp">Top secret</span></div>
+        <div class="slip"><span class="slip-no">File 04</span><h3>Lynda Jones</h3><dl><div><dt>Status</dt><dd>Active</dd></div><div><dt>Recruitment</dt><dd>$750</dd></div><div><dt>History</dt><dd><span class="bar">████████</span></dd></div></dl></div>
+      </article>
+      <article class="agent">
+        <div class="print"><img src="assets/img/op-william-freedman.jpg?v=792387" alt="Portrait of William Freedman" loading="lazy" width="640" height="800"><span class="stamp">Top secret</span></div>
+        <div class="slip"><span class="slip-no">File 05</span><h3>William Freedman</h3><dl><div><dt>Status</dt><dd>Active</dd></div><div><dt>Recruitment</dt><dd>$900</dd></div><div><dt>History</dt><dd><span class="bar">██████████</span></dd></div></dl></div>
+      </article>
+    </div>
+    <div class="wrap">
+      <div class="sheet">
+        <h3>Every file tracks the same fourteen measures, and one more.</h3>
+        <ul class="tags light"><li>Endurance</li><li>Agility</li><li>Stealth</li><li>Intelligence</li><li>Charisma</li><li>Perception</li><li>Persuasion</li><li>Ambush</li><li>Negotiation</li><li>Lockpicking</li><li>Sabotage</li><li>Close Combat</li><li>Demolition</li><li>Sniper</li><li class="hot">Mental health</li></ul>
+        <p class="small">Recruitment costs and stats reflect the current build and may change. Backstories remain classified.</p>
       </div>
-      <div class="ops">
-        <article class="op" tabindex="0">
-          <img src="assets/img/op-john-mcadams.jpg?v=792074" alt="Portrait of John McAdams" loading="lazy" width="640" height="800">
-          <span class="stamp">Top secret</span>
-          <h3>John McAdams</h3>
-          <div class="meta"><span>Status: Active</span><span>Recruitment: $600</span></div>
-          <div class="lines" aria-hidden="true"><i></i><i></i><i></i></div>
-          <span class="reveal" data-reveal>Clearance required</span>
-        </article>
-        <article class="op" tabindex="0">
-          <img src="assets/img/op-juanita-dominguez.jpg?v=792198" alt="Portrait of Juanita Dominguez" loading="lazy" width="640" height="800">
-          <span class="stamp">Top secret</span>
-          <h3>Juanita Dominguez</h3>
-          <div class="meta"><span>Status: Active</span><span>Recruitment: $500</span></div>
-          <div class="lines" aria-hidden="true"><i></i><i></i><i></i></div>
-          <span class="reveal" data-reveal>Clearance required</span>
-        </article>
-        <article class="op" tabindex="0">
-          <img src="assets/img/op-logan-blackwood.jpg?v=792267" alt="Portrait of Logan Blackwood" loading="lazy" width="640" height="800">
-          <span class="stamp">Top secret</span>
-          <h3>Logan Blackwood</h3>
-          <div class="meta"><span>Status: Active</span><span>Recruitment: $450</span></div>
-          <div class="lines" aria-hidden="true"><i></i><i></i><i></i></div>
-          <span class="reveal" data-reveal>Clearance required</span>
-        </article>
-        <article class="op" tabindex="0">
-          <img src="assets/img/op-lynda-jones.jpg?v=792314" alt="Portrait of Lynda Jones" loading="lazy" width="640" height="800">
-          <span class="stamp">Top secret</span>
-          <h3>Lynda Jones</h3>
-          <div class="meta"><span>Status: Active</span><span>Recruitment: $750</span></div>
-          <div class="lines" aria-hidden="true"><i></i><i></i><i></i></div>
-          <span class="reveal" data-reveal>Clearance required</span>
-        </article>
-        <article class="op" tabindex="0">
-          <img src="assets/img/op-william-freedman.jpg?v=792387" alt="Portrait of William Freedman" loading="lazy" width="640" height="800">
-          <span class="stamp">Top secret</span>
-          <h3>William Freedman</h3>
-          <div class="meta"><span>Status: Active</span><span>Recruitment: $900</span></div>
-          <div class="lines" aria-hidden="true"><i></i><i></i><i></i></div>
-          <span class="reveal" data-reveal>Clearance required</span>
-        </article>
-      </div>
-      <p class="ops-note small muted">Recruitment costs reflect the current build and may change.</p>
     </div>
   </section>
 
-  <section class="band" id="media">
+  <!-- ================= EVIDENCE ================= -->
+  <section class="evidence" id="media" aria-labelledby="hmedia">
     <div class="wrap">
-      <div class="sec-head">
-        <span class="label">Screenshots</span>
-        <h2>See it in the dark.</h2>
-        <p class="lede">Captured from a pre-alpha, work-in-progress build. Select any image to enlarge it.</p>
-      </div>
-      <div class="gallery" id="gallery"><!-- filled by site.js from GALLERY --></div>
+      <header class="sec-head">
+        <span class="label">Exhibits · Screenshots</span>
+        <h2 id="hmedia">See it in the dark.</h2>
+        <p class="lede">Captured from a pre-alpha, work-in-progress build.</p>
+      </header>
+      <div class="viewer" id="gallery" data-viewer><!-- built by site.js --></div>
       <div class="btns" style="margin-top:28px">
         <a class="btn" href="presskit/#screenshots">Full-resolution screenshots</a>
       </div>
     </div>
   </section>
 
-  <section class="band paper" id="faq">
-    <div class="wrap">
-      <div class="sec-head">
+  <!-- ================= FOR THE RECORD ================= -->
+  <section class="record-sheet" id="faq" aria-labelledby="hfaq">
+    <div class="seam top" aria-hidden="true"></div>
+    <div class="wrap faq-grid">
+      <header class="faq-head">
         <span class="label">Questions</span>
-        <h2>For the record.</h2>
-      </div>
+        <h2 id="hfaq">For the record.</h2>
+        <p>Transcript of the questions we are asked most. Answers are complete to the extent permitted.</p>
+      </header>
       <div class="faq">
         <details open>
           <summary>What is UNREDACTED: The Deep State?</summary>
@@ -613,27 +629,56 @@
         </details>
       </div>
     </div>
+    <div class="seam bot" aria-hidden="true"></div>
   </section>
 
-  <section class="band">
-    <div class="wrap cta">
-      <span class="label">For press and creators</span>
-      <h2>Everything you need to cover the game.</h2>
-      <p class="lede">Trailer masters, key art, logos, screenshots, operative dossiers, store and social assets, a fact sheet and the announcement press release.</p>
-      <div class="btns"><a class="btn primary" href="presskit/">Open the press kit</a></div>
+  <!-- ================= PRESS ================= -->
+  <section class="press" aria-labelledby="hpress">
+    <picture class="sec-bg" aria-hidden="true"><source srcset="assets/img/bg-archive.webp" type="image/webp"><img src="assets/img/bg-archive.jpg" alt="" width="1760" height="990" loading="lazy" decoding="async"></picture>
+    <div class="wrap press-grid">
+      <div class="press-copy">
+        <span class="label">For press and creators</span>
+        <h2 id="hpress">Everything you need to cover the game.</h2>
+        <p class="lede">One folder, cleared for release: trailer masters, key art, logos, screenshots, a fact sheet and the announcement press release.</p>
+        <div class="btns"><a class="btn primary" href="presskit/">Open the press kit</a></div>
+      </div>
+      <aside class="folder" aria-label="Press kit contents">
+        <span class="folder-tab">Press kit · Contents</span>
+        <span class="file-stamp">Cleared for release</span>
+        <ol class="index">
+          <li><a href="presskit/#videos"><span>Videos</span><b>4</b></a></li>
+          <li><a href="presskit/#keyart"><span>Key art</span><b>11</b></a></li>
+          <li><a href="presskit/#logos"><span>Logos</span><b>9</b></a></li>
+          <li><a href="presskit/#screenshots"><span>Screenshots</span><b>18</b></a></li>
+          <li><a href="presskit/#operatives"><span>Operatives</span><b>6</b></a></li>
+          <li><a href="presskit/#feature-cards"><span>Feature cards</span><b>12</b></a></li>
+          <li><a href="presskit/#store"><span>Store &amp; social</span><b>29</b></a></li>
+          <li><a href="presskit/#release"><span>Press release</span><b>1</b></a></li>
+        </ol>
+      </aside>
     </div>
   </section>
 </main>
 
 <footer class="site-foot">
-  <div class="wrap">
-    <div class="foot-row">
-      <span>UNREDACTED: The Deep State · © 2026 Think Tank Games. All rights reserved.</span>
-      <nav class="foot-links" aria-label="Footer">
-        <a href="#timeline">Timeline</a><a href="#trailer">Trailer</a><a href="presskit/">Press kit</a><a href="#faq">FAQ</a>
-      </nav>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <img src="assets/img/logo.png" alt="UNREDACTED: The Deep State" width="1024" height="340" loading="lazy">
+      <p>History is written by those who redact it.</p>
+      <p class="foot-status"><i></i>In development · Steam page coming soon</p>
     </div>
-    <p class="disclaimer">A work of fiction. The events on the timeline are real; the conspiracies, files and operations are invented. Footage and screenshots are from a work-in-progress build.</p>
+    <nav class="foot-col" aria-label="The file">
+      <h2>The file</h2>
+      <a href="#timeline">Timeline</a><a href="#trailer">Trailer</a><a href="#game">The game</a><a href="#operatives">Operatives</a><a href="#media">Screenshots</a><a href="#faq">FAQ</a>
+    </nav>
+    <nav class="foot-col" aria-label="Press">
+      <h2>Press</h2>
+      <a href="presskit/">Press kit</a><a href="presskit/#description">Fact sheet</a><a href="presskit/#release">Press release</a><a href="presskit/#download-all">Download all</a>
+    </nav>
+  </div>
+  <div class="wrap foot-legal">
+    <span>UNREDACTED: The Deep State · © 2026 Think Tank Games. All rights reserved.</span>
+    <p class="disclaimer">A work of fiction. The events on the timeline are real; the conspiracies, files and operations are invented. Timeline scenes are illustrations, not archival photographs. Footage and screenshots are from a work-in-progress build.</p>
   </div>
 </footer>
 
@@ -642,7 +687,7 @@
   <div id="lb-body"></div>
 </dialog>
 
-<script src="assets/js/site.js?v=t4"></script>
-<script src="assets/js/timeline.js?v=t4"></script>
+<script src="assets/js/site.js?v=d1"></script>
+<script src="assets/js/timeline.js?v=d1"></script>
 </body>
 </html>
